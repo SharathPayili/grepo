@@ -38,10 +38,10 @@ echo "$0 $@"  # Print the command line for logging
 # nnet3 setup, and you can skip them by setting "--stage 11" if you have already
 # run those things.
 
-local/nnet3/run_ivector_common.sh --stage $stage \
-                                  --train-set $train_set \
-                                  --gmm $gmm \
-                                  --nnet3-affix "$nnet3_affix" || exit 1;
+# local/nnet3/run_ivector_common.sh --stage $stage \
+#                                   --train-set $train_set \
+#                                   --gmm $gmm \
+#                                   --nnet3-affix "$nnet3_affix" || exit 1;
 
 gmm_dir=exp/$gmm
 ali_dir=exp/${gmm}_ali_${train_set}_sp
