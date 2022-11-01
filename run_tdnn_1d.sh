@@ -41,7 +41,6 @@ echo "$0 $@"  # Print the command line for logging
 local/nnet3/run_ivector_common.sh --stage $stage \
                                   --train-set $train_set \
                                   --gmm $gmm \
-                                  --num-threads-ubm 6 --num-processes 3 \
                                   --nnet3-affix "$nnet3_affix" || exit 1;
 
 gmm_dir=exp/$gmm
